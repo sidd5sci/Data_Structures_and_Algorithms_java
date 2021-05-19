@@ -3,14 +3,14 @@ package algorithms.sorting.merge_sort;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArraySort {
+public class MergeSort {
 
 
-    public ArraySort(){
+    public MergeSort(){
 
     }
 
-    public List mergeSort(List<Integer> array1, List<Integer> array2){
+    public List sort(List<Integer> array1, List<Integer> array2){
         if(array1.size() <= 0){
             return array2;
         }
@@ -33,4 +33,11 @@ public class ArraySort {
 //                    j++
         return null;
     }
+
+
+    public static void main(String[] args){
+
+
+    }
+
 }
