@@ -15,15 +15,17 @@ class Node{
         left = null;
     }
 }
-
-class BinaryTree {
+// lookup O(log n)
+// insert O(log n)
+// delete O(log n)
+public class BinarySearchTree {
 
     private Node root = null;
     // 1-> in-order, 2-> pre-order, 3-> post-order
     private static int ORDER = 1;
     private static int DISPLAY_TYPE = 0;
     // 0-> DFS, 1-> BFS, 2-> LevelOrder
-    public BinaryTree(){
+    public BinarySearchTree(){
 
     }
     public void setORDER(int order){

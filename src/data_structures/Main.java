@@ -1,4 +1,9 @@
-package data_structures.trees;
+package data_structures;
+
+
+import data_structures.linkedlist.LinkedList;
+import data_structures.trees.AVLTree;
+import data_structures.trees.BinarySearchTree;
 
 
 class Main{
@@ -6,7 +11,7 @@ class Main{
     public static void main(String args[]){
         System.out.println("Binary tree ....");
 
-        BinaryTree binaryTree = new BinaryTree();
+        BinarySearchTree binaryTree = new BinarySearchTree();
         binaryTree.add(55);
         binaryTree.add(23);
         binaryTree.add(10);
@@ -39,6 +44,18 @@ class Main{
         avlTree.add(44);
 
         avlTree.show();
+
+        LinkedList myList = new LinkedList(1);
+
+        myList.append(6);
+        myList.append(5);
+        myList.append(8);
+        myList.prepend(76);
+        myList.insert(5,8);
+        myList.insert(3,9);
+        myList.printList();
+        myList.reverse();
+        myList.printList();
 
     }
 }
